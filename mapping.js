@@ -6,7 +6,7 @@ TimezonePicker = {
     return tz.name();
   },
   mapping: function() {
-    return _.map(moment.tz.names(), function(name) {
+    return _.once(_.map(moment.tz.names(), function(name) {
       var prettyName = name.replace("_", " ");
       var offset = moment.tz(name)._offset / 60 * -1;
 
@@ -16,7 +16,7 @@ TimezonePicker = {
       var gmtOffset = sign + (min < 10 ? "0" : "") + min + ":" + (sec < 10 ? "0" : "") + sec;
 
       return {name: prettyName, timezone: name, gmtOffset: gmtOffset};
-    });
+    }));
   },
   from: function(value) {
     return this.mapping[value];
