@@ -1,7 +1,7 @@
-Template.timezonePicker.helpers({
-  timezones: function(usFirst) {
+Template.timeZonePicker.helpers({
+  timeZones: function(usFirst) {
     var usZones = ['US/Eastern', 'US/Central', 'US/Mountain', 'US/Pacific'];
-    var list = _(TimezonePicker.mapping()).chain().sortBy('name').sortBy(function(zone) {
+    var list = _(TimeZonePicker.mapping()).chain().sortBy('name').sortBy(function(zone) {
       return parseInt(zone.gmtOffset);
     }).value();
     var usList = _(usZones).map(function(tz) {
@@ -9,11 +9,11 @@ Template.timezonePicker.helpers({
         return ele.name === tz;
       });
     });
-    usList.push({name: "", timezone: "", gmtOffset: ""});
+    usList.push({name: "", timeZone: "", gmtOffset: ""});
     return usList.concat(list);
   },
   selected: function() {
-    if (Template.parentData(1).selected === this.timezone)
+    if (Template.parentData(1).selected === this.timeZone)
       return 'selected';
   }
 });

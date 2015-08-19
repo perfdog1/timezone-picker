@@ -10,7 +10,7 @@ Package.onUse(function(api, where) {
 
   api.use(['blaze', 'templating', 'jquery'], 'client');
   api.use(['underscore'], 'client');
-  api.use(['momentjs:moment', 'aldeed:moment-timezone'], 'client');
+  api.use(['momentjs:moment', 'aldeed:moment-timezone'], ['client', 'server']);
 
   api.addFiles([
     'mapping.js',
@@ -19,7 +19,7 @@ Package.onUse(function(api, where) {
     'jstz.js'
   ], 'client');
 
-  api.export(['TimezonePicker']);
+  api.export(['TimeZonePicker']);
 });
 
 
