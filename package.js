@@ -9,14 +9,16 @@ Package.onUse(function(api, where) {
   api.versionsFrom("METEOR@0.9.4");
 
   api.use(['blaze', 'templating', 'jquery'], 'client');
-  api.use(['underscore'], 'client');
+  api.use(['underscore'], ['client', 'server']);
   api.use(['momentjs:moment', 'aldeed:moment-timezone'], ['client', 'server']);
 
   api.addFiles([
     'mapping.js',
-    'picker.html',
-    'picker.js',
     'jstz.js'
+  ], ['client', 'server']);
+  api.addFiles([
+    'picker.html',
+    'picker.js'
   ], 'client');
 
   api.export(['TimeZonePicker']);
