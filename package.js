@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Nicely formatted dropdown list of timezones, based on moment. Also timezone detection.",
-  version: '0.1.3',
+  version: '0.1.4',
   name: "rodcope:timezone-picker",
   git: 'https://github.com/rodcope1/timezone-picker'
 });
