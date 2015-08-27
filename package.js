@@ -10,7 +10,7 @@ Package.onUse(function(api, where) {
 
   api.use(['blaze', 'templating', 'jquery'], 'client');
   api.use(['underscore'], ['client', 'server']);
-  api.use(['momentjs:moment', 'aldeed:moment-timezone'], ['client', 'server']);
+  api.use(['momentjs:moment@2.10.6', 'aldeed:moment-timezone@0.4.0'], ['client', 'server']);
 
   api.addFiles([
     'mapping.js',
