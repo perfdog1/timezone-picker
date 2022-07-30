@@ -12,10 +12,12 @@ Package.onUse(function(api, where) {
   api.use(['underscore'], ['client', 'server']);
   //api.use(['momentjs:moment@2.10.6', 'aldeed:moment-timezone@0.4.0'], ['client', 'server']);
 
+/*
   Npm.depends({
     'moment':          '2.29.4',
     'moment-timezone': '0.5.34'
   });
+*/
 
   api.addFiles([
     'mapping.js',

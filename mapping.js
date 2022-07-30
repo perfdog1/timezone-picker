@@ -1,6 +1,6 @@
 TimeZonePicker;
 
-moment = Npm.require('moment');
+//moment = Npm.require('moment');
 
 TimeZonePicker = {
   detectedZone: function() {
