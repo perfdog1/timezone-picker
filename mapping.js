@@ -1,5 +1,7 @@
 TimeZonePicker;
 
+moment = Npm.require('moment');
+
 TimeZonePicker = {
   detectedZone: function() {
     var tz = jstz.determine();
