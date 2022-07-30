@@ -13,7 +13,8 @@ Package.onUse(function(api, where) {
   //api.use(['momentjs:moment@2.10.6', 'aldeed:moment-timezone@0.4.0'], ['client', 'server']);
 
   Npm.depends({
-    'moment-timezone': '2.29.4'
+    'moment':          '2.29.4',
+    'moment-timezone': '0.5.34'
   });
 
   api.addFiles([
