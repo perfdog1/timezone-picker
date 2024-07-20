@@ -23,7 +23,6 @@ Package.onUse(function(api, where) {
     'jstz.js'
   ], ['client', 'server']);
   api.addFiles([
-    'picker.html',
     'picker.js'
   ], 'client');
 
