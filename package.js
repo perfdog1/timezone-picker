@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Nicely formatted dropdown list of timezones, based on moment. Also timezone detection.",
   version: '0.2.1',
-  name: "rodcope1:timezone-picker",
-  git: 'https://github.com/rodcope1/timezone-picker'
+  name: "perfdog1:timezone-picker",
+  git: 'https://github.com/perfdog1/timezone-picker'
 });
 
 Package.onUse(function(api, where) {
